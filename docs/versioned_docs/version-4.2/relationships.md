@@ -28,7 +28,7 @@ There are multiple ways how to define the relationship, all of following is equi
 @Entity()
 export class Book {
 
-  @ManyToOne() // plain decorator is enough, type will be sniffer via reflection!
+  @ManyToOne() // plain decorator is enough, type will be sniffed via reflection!
   author1!: Author;
 
   @ManyToOne(() => Author) // you can specify type manually as a callback
